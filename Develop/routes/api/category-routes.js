@@ -5,24 +5,41 @@ const { Category, Product } = require('../../models');
 
 router.get('/', (req, res) => {
   // find all categories
-  // be sure to include its associated Products
+  Category.findAll({
+    include: [Product], // be sure to include its associated Products
+  })
+    .then((cData) => res.json(cData))
+    .catch((err) => res.status(500).json(err));
+
 });
 
 router.get('/:id', (req, res) => {
-  // find one category by its `id` value
-  // be sure to include its associated Products
+   // find one category by its `id` value
+  Category.findOne({
+    where: {
+      id: req.params.id,
+    },
+    include: [Product],  // be sure to include its associated Products
+  })
+    .then((cData) => {
+      if (!cData) {
+        res.status(404).json({ message: 'Category id not found' });
+        return;
+      }
+      res.json(cData);
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
 });
 
-router.post('/', (req, res) => {
-  // create a new category
-});
+// create a new category
 
-router.put('/:id', (req, res) => {
-  // update a category by its `id` value
-});
 
-router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
-});
+// update a category by its `id` value
 
-module.exports = router;
+
+
+
+// delete a category by its `id` value
+
