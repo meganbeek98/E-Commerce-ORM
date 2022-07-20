@@ -36,9 +36,9 @@
 
 ## Links: <br>
 
-[insert link description](insert-actual-link-here)
+[GitHub Repository](https://github.com/meganbeek98/E-Commerce-ORM.git)
 
-[insert link description](insert-actual-link-here)
+[insert link description]()
 
 ----------------------------------------------------
 
