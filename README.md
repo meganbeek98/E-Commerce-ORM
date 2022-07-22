@@ -1,8 +1,8 @@
 # E-Commerce Back End Project --<br>-- Object Relational Mapping (ORM)
-### OSU Bootcamp Challenge 
+### OSU Bootcamp Challenge 13
 ---------------------------------------------------
 ## Devloped By: Megan Beekman (2022), [GitHub profile --->](https://github.com/meganbeek98)
-    developed using: (fill in info here)
+    developed using: npm, MySQL, JavaScript
 
 ---------------------------------------------------
 
@@ -26,19 +26,11 @@
     I WANT a back end for my e-commerce website that uses the latest technologies
     SO THAT my company can compete with other e-commerce companies
 
-## Screenshots: <br>
-
-<img>insert image path here</img>
-
-<img>insert image path here</img>
-
 ---------------------------------------------------
 
 ## Links: <br>
 
 [GitHub Repository](https://github.com/meganbeek98/E-Commerce-ORM.git)
-
-[insert link description]()
 
 ----------------------------------------------------
 
